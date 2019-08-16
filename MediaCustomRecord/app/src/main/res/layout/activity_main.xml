@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+    <SurfaceView
+        android:id="@+id/video_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <View
+        android:id="@+id/progress_line"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/video_surface_view"
+        android:background="@color/progress_line"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/start_record_tv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_circle_text_view"
+        android:text="长按拍摄"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+</RelativeLayout>
